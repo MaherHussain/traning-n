@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: :0;
+    box-sizing: border-box;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    position: relative
+}
+
+/*header style start*/
+header {
+    overflow: hidden;
+    background-color: #c80046;
+    font-weight: 100;
+    transition: .5s;
+    position: relative;
+    /* padding: 0 20px 0 0;*/
+}
+
+#logodiv {
+    float: left;
+    padding: 15px;
+    border-right: solid 2px rgba(0, 0, 0, 0.15);
+
+}
+
+.sticky {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    transition: all 1s linear;
+
+}
+
+header #logodiv a {
+    display: block;
+
+
+}
+
+#burgerWrapper {
+    float: right;
+    margin: 28px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+#burgerWrapper .burgerLine {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px 0;
+
+    transition: all 300ms ease-in-out;
+}
+
+div.openburger div:nth-child(1),
+#burgerWrapper.openburger div:nth-child(3) {
+    top: 5px;
+    position: absolute;
+}
+
+div.openburger .burgerLine:nth-child(2) {
+    display: none;
+}
+
+div.openburger .burgerLine:nth-child(1) {
+    transform: rotate(44deg);
+}
+
+#burgerWrapper.openburger .burgerLine:nth-child(3) {
+    transform: rotate(-44deg);
+
+}
+
+
+
+
+nav {
+    padding-left: 25%;
+    padding-top:50px;
+
+
+}
+
+nav ul i {
+    margin: 0 auto;
+    color: white;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: :20px;
+    transition: .5s;
+    font-weight: 500;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgba(224, 215, 224, 1);
+}
+nav ul.openmenu {
+    display: block;
+   text-align: center;
+    /*transition: 0.8s ease-in-out;*/
+   padding: 50px 0;
+    margin: 0 12%;
+    animation: open .8s ease-in-out;
+    
+}
+@keyframes open{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+nav ul.openmenu li {
+float: none;
+transition: 0.8s ease-in-out;
+}
+
+
+
+nav ul.openmenu li a {
+    padding-bottom: 25px;
+        font-size:18px;
+}
+
+@media only screen and (max-width: 990px) {
+    #burgerWrapper {
+        display: block;
+       
+
+    }
+
+    nav{
+        padding-left:0;
+    }
+
+      nav ul{
+        display: none;
+    }
+}
+
+/*header style end*/
+
+
+/*main style start*/
+main {
+    width: 100%;
+}
+
+/*jumbotron style start*/
+
+.jumbotron {
+    position: relative;
+    background: url("./fotos-af-novicell-hq-og-per-kirchner/office_aarhus_2.jpg") center center;
+    background-size: cover;
+
+
+}
+
+.jumbotron > .overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(191, 32, 90, 0.62);
+    z-index: 2;
+}
+
+.jumbotron > .inner {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.jumbotron > .inner h2 {
+    font-weight: 700;
+}
+
+.jumbotron > .inner p {
+    font-weight: 700;
+}
+
+.jumbotron > .inner a {
+    display: block;
+    color: #c80046;
+    text-decoration: none;
+    font-size: 18px;
+    max-width: 400px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 15px 0;
+    border: 2px solid white;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+
+.jumbotron > .inner a:hover {
+    background: none;
+    color: white;
+
+}
+
+
+
+.
+/*jumbotron style end*/
+
+
+/*Blog style start*/
+#blog {}
+
+#blog h2 {
+    text-align: center;
+    font-weight: 100;
+    padding: 50px 0;
+}
+
+#blogCon {
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding-top: :100px;
+    overflow: hidden;
+
+}
+
+
+.blogItem a {
+
+    display: block;
+
+    text-decoration: none;
+
+
+
+
+}
+
+.blogItem {
+
+    margin: 20px auto;
+    height: 90%;
+    text-align: center;
+    -webkit-box-shadow: 1px 3px 5px 15px rgba(224, 215, 224, 1);
+    -moz-box-shadow: 1px 3px 5px 15px rgba(224, 215, 224, 1);
+    box-shadow: 1px 3px 5px 15px rgba(224, 215, 224, 1);
+    border-radius: 5%;
+    border: 1px solid gray;
+
+
+
+}
+
+
+.imgtop {
+
+    object-fit: fill;
+
+    width: 100%;
+}
+
+.imgtop img {
+    display: block;
+    height: 150px;
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+}
+
+.perImg {
+    /* display: block;*/
+
+    z-index: 3;
+    position: absolute;
+    top: 29%;
+    left: 30%;
+
+}
+
+.perImg img {
+    display: block;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.blogTitle {
+    font-size: 16px;
+    /* margin-top: 62px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;*/
+    padding: 30px;
+    color: black;
+}
+
+.blogItem date {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#moreblog {
+    text-align: center;
+
+    margin: 30px auto
+}
+
+#moreblog a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #c80046;
+    -webkit-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+}
+
+#moreblog a h4 {
+    font-weight: 300;
+}
+
+#moreblog a:hover {
+    background-color: #af1212;
+}
+
+/*blog style end*/
+
+
+/*ClientSec style start*/
+#clientSec {
+
+    width: 100%;
+    /* text-align: center;*/
+}
+
+#clientSec h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+
+
+#gridwrapper a {
+    text-decoration: none;
+    display: block;
+}
+
+#gridwrapper a figure img {
+    display: block;
+    /* margin: 0 5px;*/
+    margin-left: 5px;
+
+    width: 100%;
+    /*height: 100%;*/
+    object-fit: cover;
+}
+
+.overlayItem {
+    position: relative;
+
+    /* margin: 15px;*/
+}
+
+.overlayTxt {
+
+    position: absolute;
+
+    left: 1%;
+    color: white;
+    transition: .5s ease;
+}
+
+.txt1 {
+    top: 90%;
+}
+
+.txt2 {
+    top: 92%;
+}
+
+.txt3 {
+    top: 92%;
+}
+
+.txt4 {
+    top: 92%;
+}
+
+.txt5 {
+    top: 92%;
+}
+
+.txt6 {
+    top: 92%;
+}
+
+
+#morecases a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #c80046;
+    -webkit-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+}
+
+#morecases a h4 {
+    font-weight: 300;
+}
+
+#morecases a:hover {
+    background-color: #af1212;
+}
+
+
+
+/*ClientSec style end*/
+
+/*ehandel style START*/
+#ehandel {
+    margin: 30px 0;
+}
+
+#tophandel {
+    background-color: #000000;
+    color: white;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+#tophandel h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#tophandel img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#tophandel p {
+    font-size: 20px;
+    padding: 50px
+}
+
+
+
+#tophandel a {
+    display: block;
+    margin-right: 200px;
+    margin-left: 30px;
+    padding: 11px;
+    margin-top: 30px;
+    background-color: white;
+    color: #c80046;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+#tophandel a:hover {
+    background-color: #c80046;
+    color: white;
+}
+
+
+
+
+#bottomhandel h2 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*#paperWrapper {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+*/
+.paperItem {
+    margin: 30px 10px;
+}
+
+.paperItem img {
+    width: 100%;
+    display: block;
+}
+
+.paperItem p span {
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.paperItem p {
+    padding: 15px 50px;
+}
+
+.paperItem a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 300px;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #c80046;
+    -webkit-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+}
+
+.paperItem a:hover {
+    background-color: #8c1111;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.paperItem a:hover {
+    background-color: #af1212;
+}
+
+/*ehandel style END*/
+
+/*footer style start*/
+footer {}
+
+footer #topsec {
+    position: relative;
+    background: url(imgs/google-map-background-1900x1170.png) no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    padding-top: 200px;
+    /*padding: 100px 50px;*/
+
+}
+
+
+.footeroverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 100%;
+    height: 100%;
+}
+
+footer #topsec #nyhed {
+    padding: 0 50px;
+}
+
+footer #topsec #nyhed a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #c80046;
+    -webkit-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 5px -1px rgba(0, 0, 0, 1);
+}
+
+footer #topsec #nyhed a:hover {
+    background-color: #af1212;
+}
+
+#socialmedia {
+
+    margin: 100px auto;
+    padding: 50px 0;
+}
+
+#socialmedia a {
+
+    float: left;
+    text-decoration: none;
+    margin: 0 30px;
+    width: 50px;
+}
+
+#socialmedia a img {
+    display: block;
+    width: 100%;
+}
+
+#bottomsec {
+    background-color: rgba(169, 17, 73, 0.79);
+}
+
+
+
+.afdelingitem {
+
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    transition: .5s;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.arhus {
+    background:
+        url(./imgs/aar-1.jpg) center, rgba(169, 17, 73, 0.79);
+
+}
+
+.koben {
+    background:
+        url(./imgs/cph-1.jpg) center, rgba(169, 17, 73, 0.79);
+
+}
+
+.barc {
+    background:
+        url(./imgs/bcn-3.jpg) center, rgba(169, 17, 73, 0.79);
+}
+
+.lon {
+    background:
+        url(./imgs/mad-1.jpg) center, rgba(169, 17, 73, 0.79);
+}
+
+.madrid {
+    background:
+        url(./imgs/ldn-2.jpg) center, rgba(169, 17, 73, 0.79);
+}
+
+.oslo {
+    background:
+        url(./imgs/oslo.jpg) center, rgba(169, 17, 73, 0.79);
+}
+
+.ebeltoft {
+    background:
+        url(./imgs/ebl-2.jpg) center, rgba(169, 17, 73, 0.79);
+}
+
+/*.afdelingitem:hover {
+    transform: scale(1.1);
+   
+}
+*/
+
+
+.afdelingitem p {
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding: 100px 0 200px 0;
+    transition: .5s;
+
+}
+
+.afdelingitem:hover p {
+    transform: scale(1.1);
+}
+
+.afdelingitem p a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.afdelingitem p span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.
+/*footer style end*/
+/*< !--main style end-- >*/
